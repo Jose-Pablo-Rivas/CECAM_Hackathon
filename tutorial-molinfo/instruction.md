@@ -26,3 +26,30 @@ Finally you need to install the softwares required for this tutorial by using th
 
 **IMPORTANT: DO NOT FORGET TO ACTIVATE THE CONDA ENVIRONMENT "tutorial-molinfo" EVERYTIME YOU OPEN A NEW TERMINAL**
 
+# Resources
+
+Data needed to complete the exercise of this tutorial can be found on [Github]().
+
+``` git clone ```
+
+There are two files in the folder:
+- 1AKI.xtc (trajectory for the analysis)
+- 1AKI.pdb (reference conformation for MOLINFO functionality)
+
+Also there a exercise-1 folder containing a plumed input file with the solution. Please go through this exercise and understand it for doing remaining exercises.
+
+# exercise-1
+
+- Calculate the radius of gyration for C-alpha atoms of first 10 residues of the protein.
+- Calculate the distance between C-alpha atoms of residue 1 and 30 of the protein.
+
+**Please read the MDAnalysis and MDTraj documentation if you are not familiar with their atom selection method.**
+
+# exercise-2
+
+- Calculate distance between geometric center of C-alpha atoms of first 5 residues and last 5 residues using MDAnalysis and MDtraj modules.
+
+# exercise-3
+
+- Calculate the hydrogen bond contacts as in alpha-helic structure of the protein for the protein  
+

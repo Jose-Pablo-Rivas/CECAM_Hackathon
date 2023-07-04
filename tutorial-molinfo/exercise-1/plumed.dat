@@ -1,0 +1,20 @@
+# First we will activate MOLINFO functionalities
+MOLINFO STRUCTURE=1AKI.pdb
+
+# To use MDAnalysis selection tools:
+# MDAnalysis uses 1-based index atoms (So the numbering start from 1)
+r1: GYRATION ATOMS={@mda:{resid 1:10 and name CA}}  
+d1: DISTANCE ATOMS={@mda:{resid 1 30 and name CA}}  
+
+# To use MDTraj selection tools:
+# MDTraj uses 0-based index atoms (So the numbering start from 0)
+r2: GYRATION ATOMS={@mdt:{resid 0 to 9 and name CA}}  
+d2: DISTANCE ATOMS={@mdt:{resid 0 29 and name CA}}  
+
+# To use VMD selection tools:
+# same indexing as in MDTraj
+#r3: GYRATION ATOMS={@vmd:{resid 0 to 10 and name CA}}
+#d3: DISTANCE ATOMS={@vmd:{resid 0 29 and name CA}}
+
+# Print all the collective variables on COLVAR file every step
+PRINT ARG=* FILE=COLVAR STRIDE=1
