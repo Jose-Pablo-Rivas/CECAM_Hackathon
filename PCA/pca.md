@@ -18,6 +18,8 @@
 
 ## Aims
 
+We want to capture the essential motions or conformational changes relevant to the specific properties we want to study. To do this we implement pca, and we calculate the angle between the domains. 
+
 ## Objectives
 
 ## Overview of the theory
